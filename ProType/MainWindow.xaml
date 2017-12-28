@@ -1,0 +1,52 @@
+﻿<odc:RibbonWindow x:Class="ProType.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:odc="http://schemas.odyssey.com/wpf"
+        xmlns:local="clr-namespace:ProType"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" WindowState="Maximized"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel LastChildFill="True">
+        <odc:RibbonBar DockPanel.Dock="Top">
+            <odc:RibbonBar.ApplicationMenu>
+                <odc:RibbonApplicationMenu>
+                    <odc:RibbonApplicationMenuItem Header="MenuItem 1" />
+                    <odc:RibbonApplicationMenuItem Header="MenuItem 2" />
+                    <odc:RibbonApplicationMenuItem Header="MenuItem 3" />
+                </odc:RibbonApplicationMenu>
+            </odc:RibbonBar.ApplicationMenu>
+            <odc:RibbonTabItem Title="Home">
+                <odc:RibbonGroup Title="Offer">
+                    <odc:RibbonButton Content="New" />
+                    <odc:RibbonButton Content="Edit" />
+                    <odc:RibbonButton Content="Find" />
+                </odc:RibbonGroup>
+
+                <odc:RibbonGroup Title="Product">
+                    <odc:RibbonButton Content="Add" />
+                    <odc:RibbonButton Content="Update" />
+                </odc:RibbonGroup>
+
+                <odc:RibbonGroup Title="Company">
+                    <odc:RibbonButton Content="Add" />
+                    <odc:RibbonButton Content="Update" />
+                </odc:RibbonGroup>
+            </odc:RibbonTabItem>
+            <odc:RibbonTabItem Title="Report">
+
+            </odc:RibbonTabItem>
+            <odc:RibbonTabItem Title="View">
+                <odc:RibbonGroup>
+                    <odc:RibbonButton Content="Office Black" Click="OfficeBlack" />
+                    <odc:RibbonButton Content="Office Blue" Click="OfficeBlue" />
+                    <odc:RibbonButton Content="Office Silver" Click="OfficeSilver" />
+                    <odc:RibbonButton Content="Vista" Click="Vista" />
+                    <odc:RibbonButton Content="Windows 7" Click="Windows7" />
+                </odc:RibbonGroup>
+            </odc:RibbonTabItem>
+        </odc:RibbonBar>
+        
+        <Grid />
+    </DockPanel>
+</odc:RibbonWindow>
